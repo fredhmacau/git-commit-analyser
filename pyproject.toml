@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "git-commit-analyser"
+version = "0.1.0"
+description = "Analisa o historico de commits de um repositorio Git e gera insights."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [
+    { name = "Frederico Macau" }
+]
+dependencies = [
+    "click>=8.1.0",
+    "gitpython>=3.1.40",
+    "rich>=13.7.0",
+]
+
+[project.scripts]
+gitca = "gitca.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["gitca"]
