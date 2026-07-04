@@ -57,5 +57,3 @@ Frederico ([@fredhdev](https://github.com/fredhdev)), Full Stack Developer, 42 L
 ## Licença
 
 MIT
-READMEEOF
-echo "README actualizado."
